@@ -1,7 +1,7 @@
 import React from 'react';
-import Post from './components/Post';
+import Escena from './components/Escena';
 
 const App = (props) => {
-	return <Post />;
+	return <Escena />;
 };
 export default App;

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "escenas",
+  "info": {
+    "name": "Escena"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "descripcioncorta": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "descripcionlarga": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "categoria": {
+      "model": "categoria"
+    },
+    "asset": {
+      "model": "asset"
+    }
+  }
+}
